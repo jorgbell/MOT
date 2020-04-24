@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: b30975f32060849449cc9abdc4adaf30
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5538437178652218004
+    second: NES - Arkanoid - Fields_0
+  - first:
+      213: 950153627745062137
+    second: NES - Arkanoid - Fields_1
+  - first:
+      213: 8904448006491168379
+    second: NES - Arkanoid - Fields_2
+  - first:
+      213: -4709680166625397878
+    second: NES - Arkanoid - Fields_3
+  - first:
+      213: 1123927910257385603
+    second: NES - Arkanoid - Fields_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -84,7 +99,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: NES - Arkanoid - Fields_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 192
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef68abf4d7697cd4588e749339b4e82d
+      internalID: 5538437178652218004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Arkanoid - Fields_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 31
+        width: 192
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ccd7e562382584e882ec01985d4987
+      internalID: 950153627745062137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Arkanoid - Fields_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 31
+        width: 192
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff6b89751cb5af45899ac22d322c085
+      internalID: 8904448006491168379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Arkanoid - Fields_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 31
+        width: 192
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3951710b098184398c87499005e84b
+      internalID: -4709680166625397878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Arkanoid - Fields_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 31
+        width: 192
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4096f81a50f2a9c44ac0fb150ad3c572
+      internalID: 1123927910257385603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
