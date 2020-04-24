@@ -5,7 +5,6 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     public float speed;
-    Vector2 dir;
     Rigidbody2D rb;
     bool input;
     void Start()
@@ -25,7 +24,7 @@ public class Ball : MonoBehaviour
             if (input)
             {
                 float random = Random.Range(-1.0f, 1.0f);
-                dir = new Vector2(random, 1f);     
+                Vector2 dir = new Vector2(random, 1f);     
                 dir.Normalize();
                 rb.velocity = dir *speed;
                 rb.isKinematic = false;
@@ -35,4 +34,16 @@ public class Ball : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+        if (player != null)
+        {
+            float hitFactor = player.HitFactor(transform.position);
+            Vector2 factorDir = new Vector2(hitFactor, 1);
+            factorDir.Normalize();
+            rb.velocity = factorDir * speed;
+        }
+
+    }
 }
