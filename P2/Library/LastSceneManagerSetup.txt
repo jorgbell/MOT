@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Test/4_Deathzone.unity
+- path: Assets/Scenes/Test/5_Bricks.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
