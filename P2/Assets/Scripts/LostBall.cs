@@ -13,9 +13,13 @@ public class LostBall : MonoBehaviour
     }
     public void OnLost()
     {
-        transform.position = respawn.position;
-        rb.isKinematic = true;
-        transform.SetParent(respawn.parent);
-        rb.velocity = new Vector2(0, 0);
+        if (GameManager.instance.PlayerLoseLife())
+        {
+            transform.position = respawn.position;
+            rb.isKinematic = true;
+            transform.SetParent(respawn.parent);
+            rb.velocity = new Vector2(0, 0);
+        }
+        else Destroy(this.gameObject);
     }
 }
