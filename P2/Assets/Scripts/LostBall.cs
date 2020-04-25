@@ -13,7 +13,12 @@ public class LostBall : MonoBehaviour
     }
     public void OnLost()
     {
-        if (GameManager.instance.PlayerLoseLife())
+        //Alive es una variable de método que nos indica si el jugador está vivo.
+        //Si la escena no tiene game manager, siempre estará vivo, pero si lo tiene, puede estar vivo o muerto.
+        bool alive = true;
+        if (GameManager.instance != null) alive = GameManager.instance.PlayerLoseLife();
+
+        if (alive)
         {
             transform.position = respawn.position;
             rb.isKinematic = true;
@@ -22,4 +27,5 @@ public class LostBall : MonoBehaviour
         }
         else Destroy(this.gameObject);
     }
+
 }

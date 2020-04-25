@@ -16,7 +16,7 @@ public class DestroyOnCollision : MonoBehaviour
         golpesRecibidos++;
         if (golpesRecibidos == golpesAntesDeMorir)
         {
-            GameManager.instance.AddPoints(puntosGanados);
+            if(GameManager.instance!=null)GameManager.instance.AddPoints(puntosGanados);
             Destroy(this.gameObject);
         }
     }
