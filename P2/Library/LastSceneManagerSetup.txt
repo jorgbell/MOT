@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Test/6_GameManager.unity
+- path: Assets/Scenes/Test/7_PowerUps.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
