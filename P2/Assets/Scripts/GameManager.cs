@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     int playerLives, playerPoints,nBricks;
     public static GameManager instance;
+    UIManager thisUI;
     private void Awake()
     {
         if (instance == null)
@@ -22,17 +23,25 @@ public class GameManager : MonoBehaviour
         playerLives = 3;
         playerPoints = 0;
         nBricks = 0;
+        if (thisUI != null) thisUI.UpdateScore(playerPoints);
+    }
+
+    public void setUIManager(UIManager UI)
+    {
+        thisUI = UI;
     }
     public bool PlayerLoseLife()
     {
         playerLives--;
         Debug.Log("Vidas: "+playerLives);
+        if (thisUI != null) thisUI.LifeLost(playerLives);
         return (playerLives > 0);
     }
     public void AddPoints(int points)
     {
         playerPoints += points;
         Debug.Log("Puntos: "+playerPoints);
+        if (thisUI != null) thisUI.UpdateScore(playerPoints);
     }
     public void AddBrick() 
     {

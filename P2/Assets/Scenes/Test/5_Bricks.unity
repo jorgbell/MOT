@@ -274,6 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &183209319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -335,8 +336,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -396,6 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &237918968
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -457,8 +459,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -518,6 +520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &491311488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -579,8 +582,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -723,6 +726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &647859556
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -784,8 +788,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1110,6 +1114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &723630474
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1171,8 +1176,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1389,6 +1394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &913323220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1450,8 +1456,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1511,6 +1517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &1096213118
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1572,8 +1579,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1690,6 +1697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &1122512657
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1751,8 +1759,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1854,6 +1862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &1527371179
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1915,8 +1924,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1976,6 +1985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &1592724897
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2037,8 +2047,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2235,6 +2245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &1902524374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2296,8 +2307,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2357,6 +2368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golpesAntesDeMorir: 1
   puntosGanados: 1
+  dieObject: {fileID: 0}
 --- !u!61 &1920965894
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2418,8 +2430,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 625657773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2feb0b4550bf9e64eb5304002f438b36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
