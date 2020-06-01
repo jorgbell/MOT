@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
         playerLives--;
         Debug.Log("Vidas: "+playerLives);
         if (thisUI != null) thisUI.LifeLost(playerLives);
+        if (playerLives == 0) { ResetParameters(); changeScene("9_Menu");}
         return (playerLives > 0);
     }
     public void AddPoints(int points)
@@ -52,5 +54,16 @@ public class GameManager : MonoBehaviour
     {
         nBricks--;
         Debug.Log("Numero Bricks: "+nBricks);
+        if (nBricks == 0) { ResetParameters(); changeScene("9_Menu"); }
+    }
+    private void ResetParameters()
+    {
+        nBricks = 0; 
+        playerLives = 3;
+        playerPoints = 0;
+    }
+    public void changeScene(string name)
+    {
+        SceneManager.LoadScene(name);
     }
 }
