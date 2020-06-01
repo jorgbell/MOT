@@ -14,7 +14,9 @@ GameObject:
   - component: {fileID: 9120723854968827468}
   - component: {fileID: 9120723854968827471}
   - component: {fileID: 9120723854968827470}
-  m_Layer: 0
+  - component: {fileID: 4351516463537908840}
+  - component: {fileID: 7062096098970630372}
+  m_Layer: 12
   m_Name: PowerUp_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,3 +166,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4351516463537908840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9120723854968827464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6818a0a386f6846bf7d4cde6ed84fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpName: Enlarge
+--- !u!114 &7062096098970630372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9120723854968827464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be349b083f997c45bf4e073878fe402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golpesAntesDeMorir: 1
+  puntosGanados: 0

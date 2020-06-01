@@ -734,6 +734,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3060905718370712665, guid: d6bb06d2912b18646b2f3a40c8600ed7,
+        type: 3}
+      propertyPath: dieObject
+      value: 
+      objectReference: {fileID: 9120723854968827464, guid: 088259f408d3b2f45b89687d1654d496,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6bb06d2912b18646b2f3a40c8600ed7, type: 3}
 --- !u!1 &671687851
@@ -748,7 +754,7 @@ GameObject:
   - component: {fileID: 671687853}
   - component: {fileID: 671687852}
   - component: {fileID: 671687855}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Deathzone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,7 +883,8 @@ GameObject:
   - component: {fileID: 721118317}
   - component: {fileID: 721118321}
   - component: {fileID: 721118320}
-  m_Layer: 0
+  - component: {fileID: 721118322}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1016,7 +1023,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721118314}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 619d94327b55bba4ea4a417dd17ee894, type: 3}
   m_Name: 
@@ -1034,6 +1041,18 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69964d1e12db0d442844e2c9ba379aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &721118322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721118314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3598a3fbae439d2498311dfb6f78bd5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &839049557
@@ -1732,6 +1751,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3060905718370712665, guid: d6bb06d2912b18646b2f3a40c8600ed7,
+        type: 3}
+      propertyPath: dieObject
+      value: 
+      objectReference: {fileID: 4101341202155041391, guid: dd1b9f6cec8c82749a62efda3b0fc19a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6bb06d2912b18646b2f3a40c8600ed7, type: 3}
 --- !u!4 &1920965892 stripped
