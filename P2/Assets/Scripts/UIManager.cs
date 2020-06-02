@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public Image[] fullLives;
-    public Text scoreText;
+    public Text scoreText,finishText;
+    public GameObject finishPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,20 @@ public class UIManager : MonoBehaviour
     public void LifeLost(int nLives)
     {
         fullLives[nLives].enabled = false;
+    }
+    public void FinishGame(bool playerWins)
+    {
+        if (finishPanel != null && finishText != null)
+        {
+            Time.timeScale = 0;
+            if (playerWins)
+                finishText.text = "Has Ganado";
+            else
+                finishText.text = "Has Perdido";
+            finishPanel.SetActive(true);
+        }
+        else
+            GameManager.instance.changeScene("9_Menu");
     }
 
 }

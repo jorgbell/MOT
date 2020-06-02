@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     UIManager thisUI;
     private void Awake()
     {
+        
         if (instance == null)
         {
             instance = this;
@@ -21,9 +22,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        nBricks = 0;
         playerLives = 3;
         playerPoints = 0;
-        nBricks = 0;
+        
         if (thisUI != null) thisUI.UpdateScore(playerPoints);
     }
 
@@ -36,7 +38,8 @@ public class GameManager : MonoBehaviour
         playerLives--;
         Debug.Log("Vidas: "+playerLives);
         if (thisUI != null) thisUI.LifeLost(playerLives);
-        if (playerLives == 0) { ResetParameters(); changeScene("9_Menu");}
+        if (thisUI!=null&&playerLives == 0)
+            finishGame(false);
         return (playerLives > 0);
     }
     public void AddPoints(int points)
@@ -54,16 +57,19 @@ public class GameManager : MonoBehaviour
     {
         nBricks--;
         Debug.Log("Numero Bricks: "+nBricks);
-        if (nBricks == 0) { ResetParameters(); changeScene("9_Menu"); }
-    }
-    private void ResetParameters()
-    {
-        nBricks = 0; 
-        playerLives = 3;
-        playerPoints = 0;
+        if (thisUI!=null&&nBricks == 0) 
+        finishGame(true);
     }
     public void changeScene(string name)
     {
-        SceneManager.LoadScene(name);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(name);        
+    }
+    private void finishGame(bool win)
+    {
+        playerLives = 3;
+        playerPoints = 0;
+        thisUI.FinishGame(win);
+        
     }
 }
