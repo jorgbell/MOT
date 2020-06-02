@@ -34,7 +34,12 @@ public class UIManager : MonoBehaviour
             finishPanel.SetActive(true);
         }
         else
-            GameManager.instance.changeScene("9_Menu");
+            GameManager.instance.ChangeScene("9_Menu");
+    }
+    public void RemainingLives(int lives)
+    {
+        for(int i = lives; i<3; i++)
+            fullLives[i].enabled = false;
     }
 
 }

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     int playerLives, playerPoints,nBricks;
+    bool lost;
     public static GameManager instance;
     UIManager thisUI;
     private void Awake()
@@ -25,21 +26,26 @@ public class GameManager : MonoBehaviour
         nBricks = 0;
         playerLives = 3;
         playerPoints = 0;
-        
-        if (thisUI != null) thisUI.UpdateScore(playerPoints);
+        lost = false;
     }
 
     public void setUIManager(UIManager UI)
     {
         thisUI = UI;
+        thisUI.UpdateScore(playerPoints);
+        thisUI.RemainingLives(playerLives);
+        lost = false;
     }
     public bool PlayerLoseLife()
     {
         playerLives--;
         Debug.Log("Vidas: "+playerLives);
         if (thisUI != null) thisUI.LifeLost(playerLives);
-        if (thisUI!=null&&playerLives == 0)
-            finishGame(false);
+        if (playerLives == 0)
+        {
+            lost = true;
+            LevelFinished(false);
+        }
         return (playerLives > 0);
     }
     public void AddPoints(int points)
@@ -57,19 +63,29 @@ public class GameManager : MonoBehaviour
     {
         nBricks--;
         Debug.Log("Numero Bricks: "+nBricks);
-        if (thisUI!=null&&nBricks == 0) 
-        finishGame(true);
+        if (!lost && nBricks == 0)
+            LevelFinished(true);
     }
-    public void changeScene(string name)
+    public void ChangeScene(string name)
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(name);        
     }
-    private void finishGame(bool win)
+
+    void LevelFinished(bool playerWins)
+    {
+        if (playerWins && SceneManager.GetActiveScene().name == "Level1") ChangeScene("Level2");
+        else
+        {
+            ResetGame();
+            if (thisUI != null) thisUI.FinishGame(playerWins);
+        }
+
+    }
+
+    void ResetGame()
     {
         playerLives = 3;
         playerPoints = 0;
-        thisUI.FinishGame(win);
-        
     }
 }
