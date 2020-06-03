@@ -6,11 +6,12 @@ public class LostBall : MonoBehaviour
 {
     Rigidbody2D rb;
     public Transform respawn;
-    // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();//cacheo de componentes
     }
+
+    //método al que se llama cuando la bola se destruye
     public void OnLost()
     {
         //Alive es una variable de método que nos indica si el jugador está vivo.
@@ -18,14 +19,14 @@ public class LostBall : MonoBehaviour
         bool alive = true;
         if (GameManager.instance != null) alive = GameManager.instance.PlayerLoseLife();
 
-        if (alive)
+        if (alive)//en caso de que tenga gameManager Y esté vivo, le hace respawn
         {
             transform.position = respawn.position;
             rb.isKinematic = true;
             transform.SetParent(respawn.parent);
             rb.velocity = new Vector2(0, 0);
         }
-        else Destroy(this.gameObject);
+        else Destroy(this.gameObject);//en caso contrario, estará muerto así que se destruirá el jugador
     }
 
 }

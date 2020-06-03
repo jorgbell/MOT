@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Brick : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        GameManager.instance.AddBrick();
+        if (GameManager.instance != null) GameManager.instance.AddBrick();
     }
     private void OnDestroy()
     {
-        GameManager.instance.BrickDestroyer();
+        if(GameManager.instance != null) GameManager.instance.BrickDestroyer();
     }
 }

@@ -8,7 +8,7 @@ public class SetInitialSpeed : MonoBehaviour
     Rigidbody2D rb;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.velocity = initialVelocity;
+        rb = GetComponent<Rigidbody2D>();//cacheo de componentes
+        rb.velocity = initialVelocity;//le damos una velocidad constante cuando el componente aparezca
     }
 }

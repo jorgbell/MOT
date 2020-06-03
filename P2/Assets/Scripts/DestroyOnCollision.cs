@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestroyOnCollision : MonoBehaviour
 {
-    public int golpesAntesDeMorir, puntosGanados;
+    public int golpesAntesDeMorir, puntosGanados;//variables de control
     int golpesRecibidos;
     public GameObject dieObject;
     // Start is called before the first frame update
@@ -14,12 +14,12 @@ public class DestroyOnCollision : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        golpesRecibidos++;
-        if (golpesRecibidos == golpesAntesDeMorir)
+        golpesRecibidos++;//si colisiona, sumamos 1 y comprobamos que llegue al tope o no
+        if (golpesRecibidos == golpesAntesDeMorir)//si llega al tope de golpes
         {
-            if(GameManager.instance!=null)GameManager.instance.AddPoints(puntosGanados);
-            if(dieObject!=null) Instantiate<GameObject>(dieObject, transform.position, Quaternion.identity);
-            Destroy(this.gameObject);
+            if(GameManager.instance!=null)GameManager.instance.AddPoints(puntosGanados); //suma puntos
+            if(dieObject!=null) Instantiate<GameObject>(dieObject, transform.position, Quaternion.identity);//spawnea un objeto
+            Destroy(this.gameObject);//destruye el objeto
         }
     }
 }
